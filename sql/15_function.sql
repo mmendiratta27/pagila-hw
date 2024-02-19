@@ -4,7 +4,7 @@
  */
 CREATE OR REPLACE FUNCTION category_counts_by_language(TEXT) RETURNS TABLE(name TEXT, count BIGINT) AS
 $$
--- FIXME: implementation goes here
+select category.name, count(title) as sum from category join film_category using(category_id) join film using(film_id) join language using(language_id) where language.name::text ilike $1 group by category.name order by category.name;
 $$
 LANGUAGE SQL
 IMMUTABLE
