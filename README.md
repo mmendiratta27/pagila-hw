@@ -50,6 +50,8 @@ The following picture illustrates the database's structure:
    > Once you've done that, you are likely to find that some test cases will pass on the lambda server but fail on github actions.
    > You will then have to figure out why they are failing on github actions and fix them for full credit.
 
+FOR ACTIONS PLS WORK
+
 1. **Grading:**
     If all test cases pass, you will receive full credit.
     For the first failing test case, you will receive -4 points.
